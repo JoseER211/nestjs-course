@@ -6,7 +6,13 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { PaymentsModule } from './payments/payments.module';
 @Module({
-  imports: [TaskModule, ProjectsModule, UsersModule, AuthModule, PaymentsModule],
+  imports: [
+    TaskModule,
+    ProjectsModule,
+    UsersModule,
+    AuthModule,
+    PaymentsModule,
+  ],
   controllers: [HelloController],
 })
 export class AppModule {}
